@@ -4,12 +4,12 @@
 
 //$connexion = new PDO('mysql:host=localhost;dbname=projet_photos;charset=utf8','msb','stagiaire');
 $connexion = new PDO('mysql:host=localhost;dbname=projet_photos;charset=utf8','lauhu','stagiaire ');
-// $connexion = new PDO('mysql:host=localhost;dbname=
+
 
 //Connexion à la base de données
 
-$email=htmlspecialchars($_POST['email']);
-$mdp=htmlspecialchars($_POST['mdp']);
+$email=$_POST['email'];
+$mdp=$_POST['mdp'];
 
 
 //Requête de récupération des données
@@ -30,5 +30,6 @@ if ($select->rowcount() > 0){
     $_SESSION['email']=$reponse['email'];
     $_SESSION['mdp']=$reponse['mdp'];
     $_SESSION['id_money']=$reponse['id_money'];
+    header('Location:achat.php');
 }
 ?>

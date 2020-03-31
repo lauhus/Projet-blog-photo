@@ -1,8 +1,12 @@
 <?php
 session_start();
-if{ //pas connecté 
-    }else{ // renvoyer vers inscription ou connexion
-}
+if(empty($_SESSION['prenom']))
+    {
+        header('Location:connnex.php');
+        exit();
+    }
+    //echo "Bienvenu $_SESSION['prenom'], vous avez accès au catalogue complet ainsi qu'à l'achat des photographies."
+    //}else{ // renvoyer vers inscription ou connexion
 
 ?>
 <!DOCTYPE html>

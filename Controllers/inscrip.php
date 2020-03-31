@@ -12,6 +12,11 @@ $email=$_POST['email'];
 $mdp=$_POST['mdp'];
 $id_money=$_POST['id_money'];
 
+//Vérifie si l'adresse mail existe déjà
+if($email ->exists($_POST['email'])){
+    throw new Exception("Cet e-mail est déjà enregistré.");
+}
+
 //Requête de création
 $select=$connexion->prepare("INSERT INTO user(nom, prenom, email, mdp, id_money)VALUES('$nom','$prenom','$email','$mdp','$id_money')");
 $select->execute();
@@ -24,5 +29,6 @@ if ($select->rowcount() > 0){
     $_SESSION['email']=$reponse['email'];
     $_SESSION['mdp']=$reponse['mdp'];
     $_SESSION['id_money']=$reponse['id_money'];
+    header('Location:achat.php');
 }
 ?>
