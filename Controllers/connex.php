@@ -2,7 +2,8 @@
 
 //connexion au serveur
 
-$connexion = new PDO('mysql:host=localhost;dbname=projet_photos;charset=utf8','msb','stagiaire');
+//$connexion = new PDO('mysql:host=localhost;dbname=projet_photos;charset=utf8','msb','stagiaire');
+$connexion = new PDO('mysql:host=localhost;dbname=projet_photos;charset=utf8','lauhu','stagiaire ');
 // $connexion = new PDO('mysql:host=localhost;dbname=
 
 //Connexion à la base de données
