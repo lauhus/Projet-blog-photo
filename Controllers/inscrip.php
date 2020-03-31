@@ -15,7 +15,7 @@ $id_money=htmlspecialchars($_POST)['id_money'];
 
 //Requête de création
 
-$connexion->exec("INSERT INTO client(nom, prenom, email, mdp, id_money)VALUES('$nom','$prenom','$email'$mdp','$id_money')");
+$connexion->exec("INSERT INTO client(nom, prenom, email, mdp, id_money)VALUES('$nom','$prenom','$email','$mdp','$id_money')");
 if ($select->rowcount() > 0){
     session_start();
     $_SESSION['nom']=$reponse['nom'];
