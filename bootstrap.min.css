@@ -10,6 +10,9 @@ display:block;
 margin-left: auto;
 margin-right: auto;
 }
+.photo{
+    border-top-left-radius: 300px 150px;
+}
 
 .form{
     display: flex;
