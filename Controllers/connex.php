@@ -22,6 +22,8 @@ $select->bindParam(2, $mdp);
 
 $select->execute();
 $reponse = $select->fetch();
+
+print_r($reponse);
 /**Réattribution des variables pour une ouverture de session et renvoie vers la page achat.html**/
 if ($select->rowcount() > 0){
     session_start();

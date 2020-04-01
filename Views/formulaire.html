@@ -22,11 +22,7 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="../Controllers/achat.php"> Mes Photographies</a>
-                </li>
-                <form class="form-inline my-2 my-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="Formulaires.html">Inscription ou connexion</a>
-                </li>                
+                </li>              
                 </ul>
                 </form>
             </div>
@@ -35,7 +31,7 @@
     </header>
     <!--Formulaire inscription-->
     <div class= "form_inscrip">
-        <form action="../Controllers/inscrip.php.php" method="POST">
+        <form action="../Controllers/inscrip.php" method="POST">
             <fieldset>
                 <legend>Inscription</legend>
                 <div class="form-group">
@@ -65,18 +61,18 @@
             <fieldset>
                 <legend>Connexion</legend>
                 <div class="form-group row">
-                <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                <label for="staticEmail" class="col-sm-2 col-form-label" > Email</label>
                 <div class="col-sm-10">
                     <input type="text" readonly="" class="form-control-plaintext" id="staticEmail" value="email@exemple.com">
                 </div>
                 </div>
                 <div class="form-group">
                 <label for="exampleInputEmail1">Adresse Email</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Entrer votre Email">
+                <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Entrer votre Email">
                 </div>
                 <div class="form-group">
                 <label for="exampleInputPassword1">Mot de passe</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mot de passe">
+                <input type="password" class="form-control" name="mdp" id="exampleInputPassword1" placeholder="Mot de passe">
                 </div>
                 <button type="submit" class="btn btn-primary">Connexion</button>
             </fieldset>
