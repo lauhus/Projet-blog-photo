@@ -1,13 +1,14 @@
 <?php
-session_start();
+/*session_start();
 if(empty($_SESSION['prenom']))
     {
         header('Location:connnex.php');
         exit();
     }
     //echo "Bienvenu $_SESSION['prenom'], vous avez accès au catalogue complet ainsi qu'à l'achat des photographies."
-    //}else{ // renvoyer vers inscription ou connexion
+    //}else{ // renvoyer vers inscription ou connexion*/
 
+// NAV BAR
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -15,7 +16,7 @@ if(empty($_SESSION['prenom']))
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil Jean-Michel Photographie</title>
-    <link rel="stylesheet" href="bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/sketchy/bootstrap.min.css"/>
 </head>
 <body>
     <div>
@@ -37,3 +38,120 @@ if(empty($_SESSION['prenom']))
         </div>
     </nav>
     </div>
+
+<form>
+<fieldset>
+<legend> <font style = "vertical-align: inherit;"> <font style = "vertical-align: inherit;"> Nouvelle collection : A WORLD OF FACES  </font> </font> </legend>
+<fieldset class = "form-group">
+    <legend> <font style = "vertical-align: inherit;"> <font style = "vertical-align: inherit;"> A Wordl of faces #1 </font> </font> </legend>
+<img 
+src="../html/Projet-blog-photo/Photo/image.jpg" alt="photo" />
+    <div class = "form-check">
+    <label class = "form-check-label">
+        <input class = "form-check-input" type = "checkbox"> <font style = "vertical-align: inherit;"> <font style = "vertical-align: inherit;" >
+        Afficher explication ou description + prix 
+    </font></{ </label>
+    </div>
+    <legend> <font style = "vertical-align: inherit;"> <font style = "vertical-align: inherit;"> A Wordl of faces #2 </font> </font> </legend>
+<img 
+src="../html/Projet-blog-photo/Photo/image.jpg" alt="photo" />
+    <div class = "form-check">
+    <label class = "form-check-label">
+        <input class = "form-check-input" type = "checkbox"> <font style = "vertical-align: inherit;"> <font style = "vertical-align: inherit;" >
+        Afficher explication ou description + prix 
+    </font></{ </label>
+    </div>
+    <legend> <font style = "vertical-align: inherit;"> <font style = "vertical-align: inherit;"> A Wordl of faces #3 </font> </font> </legend>
+<img 
+src="../html/Projet-blog-photo/Photo/image.jpg" alt="photo" />
+    <div class = "form-check">
+    <label class = "form-check-label">
+        <input class = "form-check-input" type = "checkbox"> <font style = "vertical-align: inherit;"> <font style = "vertical-align: inherit;" >
+        Afficher explication ou description + prix 
+    </font></{ </label>
+    </div>
+    <legend> <font style = "vertical-align: inherit;"> <font style = "vertical-align: inherit;"> A Wordl of faces #4 </font> </font> </legend>
+<img 
+src="../html/Projet-blog-photo/Photo/image.jpg" alt="photo" />
+    <div class = "form-check">
+    <label class = "form-check-label">
+        <input class = "form-check-input" type = "checkbox"> <font style = "vertical-align: inherit;"> <font style = "vertical-align: inherit;" >
+        Afficher explication ou description + prix 
+    </font></{ </label>
+    </div>
+    <legend> <font style = "vertical-align: inherit;"> <font style = "vertical-align: inherit;"> A Wordl of faces #5 </font> </font> </legend>
+<img 
+src="../html/Projet-blog-photo/Photo/image.jpg" alt="photo" />
+    <div class = "form-check">
+    <label class = "form-check-label">
+        <input class = "form-check-input" type = "checkbox"> <font style = "vertical-align: inherit;"> <font style = "vertical-align: inherit;" >
+        Afficher explication ou description + prix 
+    </font></{ </label>
+    </div>
+    <legend> <font style = "vertical-align: inherit;"> <font style = "vertical-align: inherit;"> A Wordl of faces #6 </font> </font> </legend>
+<img 
+src="../html/Projet-blog-photo/Photo/image.jpg" alt="photo" />
+    <div class = "form-check">
+    <label class = "form-check-label">
+        <input class = "form-check-input" type = "checkbox"> <font style = "vertical-align: inherit;"> <font style = "vertical-align: inherit;" >
+        Afficher explication ou description + prix 
+    </font></{ </label>
+    </div>
+    <legend> <font style = "vertical-align: inherit;"> <font style = "vertical-align: inherit;"> A Wordl of faces #7 </font> </font> </legend>
+<img 
+src="../html/Projet-blog-photo/Photo/image.jpg" alt="photo" />
+    <div class = "form-check">
+    <label class = "form-check-label">
+        <input class = "form-check-input" type = "checkbox"> <font style = "vertical-align: inherit;"> <font style = "vertical-align: inherit;" >
+        Afficher explication ou description + prix 
+    </font></{ </label>
+    </div>
+    <legend> <font style = "vertical-align: inherit;"> <font style = "vertical-align: inherit;"> A Wordl of faces #8 </font> </font> </legend>
+<img 
+src="../html/Projet-blog-photo/Photo/image.jpg" alt="photo" />
+    <div class = "form-check">
+    <label class = "form-check-label">
+        <input class = "form-check-input" type = "checkbox"> <font style = "vertical-align: inherit;"> <font style = "vertical-align: inherit;" >
+        Afficher explication ou description + prix 
+    </font></{ </label>
+    </div>
+    <legend> <font style = "vertical-align: inherit;"> <font style = "vertical-align: inherit;"> A Wordl of faces #7 </font> </font> </legend>
+<img 
+src="../html/Projet-blog-photo/Photo/image.jpg" alt="photo" />
+    <div class = "form-check">
+    <label class = "form-check-label">
+        <input class = "form-check-input" type = "checkbox"> <font style = "vertical-align: inherit;"> <font style = "vertical-align: inherit;" >
+        Afficher explication ou description + prix 
+    </font></{ </label>
+    </div>
+    <legend> <font style = "vertical-align: inherit;"> <font style = "vertical-align: inherit;"> A Wordl of faces #8 </font> </font> </legend>
+<img 
+src="../html/Projet-blog-photo/Photo/image.jpg" alt="photo" />
+    <div class = "form-check">
+    <label class = "form-check-label">
+        <input class = "form-check-input" type = "checkbox"> <font style = "vertical-align: inherit;"> <font style = "vertical-align: inherit;" >
+        Afficher explication ou description + prix 
+    </font></{ </label>
+    </div>
+    <legend> <font style = "vertical-align: inherit;"> <font style = "vertical-align: inherit;"> A Wordl of faces #9 </font> </font> </legend>
+<img 
+src="../html/Projet-blog-photo/Photo/image.jpg" alt="photo" />
+    <div class = "form-check">
+    <label class = "form-check-label">
+        <input class = "form-check-input" type = "checkbox"> <font style = "vertical-align: inherit;"> <font style = "vertical-align: inherit;" >
+        Afficher explication ou description + prix 
+    </font></{ </label>
+    </div>
+    <legend> <font style = "vertical-align: inherit;"> <font style = "vertical-align: inherit;"> A Wordl of faces #10 </font> </font> </legend>
+<img 
+src="../html/Projet-blog-photo/Photo/image.jpg" alt="photo" />
+    <div class = "form-check">
+    <label class = "form-check-label">
+        <input class = "form-check-input" type = "checkbox"> <font style = "vertical-align: inherit;"> <font style = "vertical-align: inherit;" >
+        Afficher explication ou description + prix 
+    </font></{ </label>
+    </div>
+</fieldset>
+<button type = "submit" class = "btn btn-primary"> <font style = "vertical-align: inherit;"> <font style = "vertical-align: inherit;"> Valider la commande </font> </ font > </button>
+</fieldset>
+</form>  
