@@ -1,12 +1,11 @@
 <?php
 
-//connexion au serveur
-
+/**connexion au serveur de la base de données. @$connexion: il y en a une pour chaque gestionnaire**/
 //$connexion = new PDO('mysql:host=localhost;dbname=projet_photos;charset=utf8','msb','stagiaire');
 $connexion = new PDO('mysql:host=localhost;dbname=projet_photos;charset=utf8','lauhu','stagiaire ');
 
 
-//Connexion à la base de données
+/**Connexion à la base de données via le formulaire, l'email sert d'ID*/
 
 $email=$_POST['email'];
 $mdp=$_POST['mdp'];
@@ -23,6 +22,7 @@ $select->bindParam(2, $mdp);
 
 $select->execute();
 $reponse = $select->fetch();
+/**Réattribution des variables pour une ouverture de session et renvoie vers la page achat.html**/
 if ($select->rowcount() > 0){
     session_start();
     $_SESSION['nom']=$reponse['nom'];
