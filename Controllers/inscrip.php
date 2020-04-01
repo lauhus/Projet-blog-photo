@@ -2,8 +2,8 @@
 //var_dump($_POST);
 
 /**connexion au serveur de la base de données. @$connexion: il y en a une pour chaque gestionnaire**/
-//$connexion = new PDO('mysql:host=localhost;dbname=projet_photos;charset=utf8','msb','stagiaire');
-$connexion = new PDO('mysql:host=localhost;dbname=projet_photos;charset=utf8','lauhu','stagiaire ');
+$connexion = new PDO('mysql:host=localhost;dbname=projet_photos;charset=utf8','msb','stagiaire');
+//$connexion = new PDO('mysql:host=localhost;dbname=projet_photos;charset=utf8','lauhu','stagiaire ');
 
 /**@$_POST[''] pour récupérer les donnnées provenant des champs du formulaire d'inscription:
  *  nom, prenom, email(qui servira d'identifiant pour les connexions), mot de passe et $_POST['id_money'] pour pouvoir ne pas avoir à les entrer à chaque nouvel achat.
@@ -14,11 +14,18 @@ $email=htmlspecialchars($_POST['email']);
 $mdp=htmlspecialchars($_POST['mdp']);
 $id_money=htmlspecialchars($_POST['id_money']);
 
-/**Vérifie si l'adresse mail existe déjà
-! ne fonctionne pas encore **/ 
-/*if($email->exists($_POST['email'])){
-    throw new Exception("Cet e-mail est déjà enregistré.");
-}*/
+/**Vérifie si l'adresse mail existe déjà*/
+$query = $connexion->prepare("SELECT COUNT(*) FROM user WHERE email = :email");
+$query->bindValue(':email', $email, PDO::PARAM_STR);
+$num_row = $query->fetchColumn();
+
+if ($num_row == 1)// Si l'email est déjà existant
+    {
+        echo 'Un compte existe déjà avec cet e-mail !';
+    }
+    else // Si le pseudo n'existe pas déjà
+    {   
+
 
 /**Requête de création d'un compte avec INSERT INTO*/
 $select=$connexion->prepare("INSERT INTO user(nom, prenom, email, mdp, id_money)VALUES('$nom','$prenom','$email','$mdp','$id_money')");
@@ -32,6 +39,7 @@ if ($select->rowcount() > 0){
     $_SESSION['email']=$reponse['email'];
     $_SESSION['mdp']=$reponse['mdp'];
     $_SESSION['id_money']=$reponse['id_money'];
-   // header('Location:../index.html');
+    header('Location:../Index.html');
+}
 }
 ?>

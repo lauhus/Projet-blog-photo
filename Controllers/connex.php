@@ -1,14 +1,16 @@
 <?php
 
 /**connexion au serveur de la base de données. @$connexion: il y en a une pour chaque gestionnaire**/
-//$connexion = new PDO('mysql:host=localhost;dbname=projet_photos;charset=utf8','msb','stagiaire');
-$connexion = new PDO('mysql:host=localhost;dbname=projet_photos;charset=utf8','lauhu','stagiaire ');
+$connexion = new PDO('mysql:host=localhost;dbname=projet_photos;charset=utf8','msb','stagiaire');
+//$connexion = new PDO('mysql:host=localhost;dbname=projet_photos;charset=utf8','lauhu','stagiaire ');
 
 
 /**Connexion à la base de données via le formulaire, l'email sert d'ID*/
-
-$email=$_POST['email'];
-$mdp=$_POST['mdp'];
+$nom=htmlspecialchars($_POST['nom']); 
+$prenom=htmlspecialchars($_POST['prenom']);
+$email=htmlspecialchars($_POST['email']);
+$mdp=htmlspecialchars($_POST['mdp']);
+$id_money=htmlspecialchars($_POST['id_money']);
 
 
 //Requête de récupération des données
@@ -32,6 +34,6 @@ if ($select->rowcount() > 0){
     $_SESSION['email']=$reponse['email'];
     $_SESSION['mdp']=$reponse['mdp'];
     $_SESSION['id_money']=$reponse['id_money'];
-    header('Location:achat.php');
+    header('Location:../achat.html');
 }
 ?>
