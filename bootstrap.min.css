@@ -1,8 +1,8 @@
 .formachat{
-    display:block;
+    display:flex;
     margin-left: auto;
     margin-right: auto;
-    text-align:center;
+    align-items: center;
 }
 .imgaccueil
 {
