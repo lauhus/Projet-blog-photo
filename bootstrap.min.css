@@ -18,7 +18,9 @@ margin-right: auto;
     display: flex;
     justify-content: space-around;
 }
-
+.footer{
+    margin-left: 5%;
+}
 
 /* animation */
 
