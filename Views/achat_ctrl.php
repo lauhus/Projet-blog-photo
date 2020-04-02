@@ -1,9 +1,10 @@
 <?php
-session_start();
+/*session_start();
 if{(
     (session_start($_SESSION['id']==NULL));
     echo 'Veuillez vous connectez avant de profiter de la collection'; 
-}
+}*/
+
 ?>
 
 <!DOCTYPE html>
@@ -25,7 +26,7 @@ if{(
             <div class="collapse navbar-collapse" id="navbarColor01">
                 <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="Views/presentation.html"> A propos de moi <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="presentation.html"> A propos de moi <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="achat_ctrl.php"> Mes Photographies</a>
@@ -35,7 +36,7 @@ if{(
         </nav>
         <br> <br> <br>
 
-        <form class="formachat" action="../Controllers/achat.php" method="POST">
+        <form class="formachat" action="../Controllers/achat_controllers.php" method="POST">
             <fieldset>
             <legend>  <h1> Nouvelle collection : A WORLD OF FACES  </h1>  </legend>
             <fieldset class = "form-group">
