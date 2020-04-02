@@ -40,7 +40,7 @@
         <p> <h6>droits d'auteur </h6> 
             <br>Tous les textes et photos présents sur le site <a href="../Index.html">www.jean-michelphotographie.fr</a><br>, sauf
             indications contraire, sont la propriété exclusive de l'auteur . Soumis aux lois<br> sur le droits d'auteur, protégés par le code 
-            de la proprité Intelectuelle (Art. L. 122-4).<br> Tous droitss réservés. ©2020 </p></div>
+            de la proprité Intelectuelle (Art. L. 122-4).<br> Tous droits réservés. ©2020 </p></div>
             <hr class="my-4">
             <div class="col">
         <p> <h6>Me contacter :</h6> <br> jmphotographie@contact.fr <br> 33 (0) 111 111 111<br> 1 rue de la perfection 57000 Metz </p>
