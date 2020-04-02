@@ -11,7 +11,7 @@ margin-left: auto;
 margin-right: auto;
 }
 .photo{
-    border-top-left-radius: 300px 150px;
+    border-radius: 25%;
 }
 
 .form{
@@ -26,7 +26,7 @@ margin-right: auto;
 
 .hovereffect {
 min-width: 100%;
-min-height: 1230px;
+min-height: 600px;
 width: 100%;
 height: auto;
 float: left;
