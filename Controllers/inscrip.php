@@ -34,7 +34,7 @@ $select->execute();
     }
 
 $reponse=$select->fetch();
-/**Réattribution des variables pour une ouverture de session et renvoie vers la page achat.html**/
+/**Réattribution des variables pour une ouverture de session et renvoie vers la page achat_ctrl.html**/
 if ($select->rowcount() > 0){
     session_start();
     $_SESSION['nom']=$reponse['nom'];

@@ -51,7 +51,7 @@ if ($_SESSION['email']==NULL) {
                 </label>
                 <label class = "form-check-label">
                     <input class = "form-check-input" type = "checkbox"name="pd1">
-                    Photographie avec droits 300€   
+                    Photographie avec droitss 300€   
                 </label>
                 </div>
                 <br> <br>
@@ -64,7 +64,7 @@ if ($_SESSION['email']==NULL) {
                 </label>
                     <label class = "form-check-label">
                         <input class = "form-check-input" type = "checkbox" name="pd2">
-                        Photographie avec droits 300€   
+                        Photographie avec droitss 300€   
                     </label>
                 </div>
                 <br><br>
@@ -77,7 +77,7 @@ if ($_SESSION['email']==NULL) {
                 </label>
                     <label class = "form-check-label">
                         <input class = "form-check-input" type = "checkbox" name="pd3">
-                        Photographie avec droits 300€   
+                        Photographie avec droitss 300€   
                     </label>
                 </div>
                 <br><br>
@@ -90,7 +90,7 @@ if ($_SESSION['email']==NULL) {
                 </label>
                     <label class = "form-check-label">
                         <input class = "form-check-input" type = "checkbox" name="pd4">
-                        Photographie avec droits 300€   
+                        Photographie avec droitss 300€   
                     </label>
                 </div>
                 <br><br>
@@ -103,7 +103,7 @@ if ($_SESSION['email']==NULL) {
                 </label>
                     <label class = "form-check-label">
                         <input class = "form-check-input" type = "checkbox" name="pd5">
-                        Photographie avec droits 300€   
+                        Photographie avec droitss 300€   
                     </label>
                 </div>
                 <br><br>
@@ -116,7 +116,7 @@ if ($_SESSION['email']==NULL) {
                 </label>
                     <label class = "form-check-label">
                         <input class = "form-check-input" type = "checkbox" name="pd6">
-                        Photographie avec droits 300€   
+                        Photographie avec droitss 300€   
                     </label>
                 </div> 
                 <br> <br>
@@ -129,7 +129,7 @@ if ($_SESSION['email']==NULL) {
                 </label>
                     <label class = "form-check-label">
                         <input class = "form-check-input" type = "checkbox" name="pd7">
-                        Photographie avec droits 300€   
+                        Photographie avec droitss 300€   
                     </label>
                 </div>
                 <br> <br>
@@ -142,7 +142,7 @@ if ($_SESSION['email']==NULL) {
                 </label>
                     <label class = "form-check-label">
                         <input class = "form-check-input" type = "checkbox" name="pd8">
-                        Photographie avec droits 300€   
+                        Photographie avec droitss 300€   
                     </label>
                 </div>
                 <br> <br>
@@ -155,7 +155,7 @@ if ($_SESSION['email']==NULL) {
                 </label>
                     <label class = "form-check-label">
                         <input class = "form-check-input" type = "checkbox" name="pd9">
-                        Photographie avec droits 300€   
+                        Photographie avec droitss 300€   
                     </label>
                 </div>
                 <br><br>
@@ -168,7 +168,7 @@ if ($_SESSION['email']==NULL) {
                 </label>
                     <label class = "form-check-label">
                         <input class = "form-check-input" type = "checkbox" name="pd10">
-                        Photographie avec droits 300€   
+                        Photographie avec droitss 300€   
                     </label>
                 </div>
                 <br><br>
@@ -179,10 +179,10 @@ if ($_SESSION['email']==NULL) {
         </div>
         <footer> 
             <div clas="col">
-            <p><h6>Droit d'auteur </h6> 
+            <p><h6>droits d'auteur </h6> 
                 <br>Tous les textes et photos présents sur le site <a href="../Index.html"> www.jean-michelphotographie.fr</a><br>, sauf
-                indications contraire, sont la propriété exclusive de l'auteur . Soumis aux lois<br> sur le Droit d'auteur, protégés par le code 
-                de la proprité Intelectuelle (Art. L. 122-4).<br> Tous droits réservés. ©2020 </p></div>
+                indications contraire, sont la propriété exclusive de l'auteur . Soumis aux lois<br> sur le droits d'auteur, protégés par le code 
+                de la proprité Intelectuelle (Art. L. 122-4).<br> Tous droitss réservés. ©2020 </p></div>
                 <hr class="my-4">
                 <div class="col">
             <p><h6>Me contacter :</h6><br> jmphotographie@contact.fr <br> 33 (0) 111 111 111<br> 1 rue de la perfection 57000 Metz </p>
