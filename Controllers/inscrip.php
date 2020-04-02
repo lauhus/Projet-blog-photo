@@ -14,11 +14,25 @@ $email=htmlspecialchars($_POST['email']);
 $mdp=htmlspecialchars($_POST['mdp']);
 $id_money=htmlspecialchars($_POST['id_money']);
 
+$verif= $connexion->prepare('SELECT email FROM user WHERE email=?');
+
+$verif->bindParam(1, $email);
+$verif->execute();
+
+$repverif=$verif->fetch();
+
+if ($repverif[0] == $email){
+    header('Location:../Views/formulaire.html?message="E-mail déjà utilisé,connectez-vous"');
+    
+    } else { 
 
 
 /**Requête de création d'un compte avec INSERT INTO*/
 $select=$connexion->prepare("INSERT INTO user(nom, prenom, email, mdp, id_money)VALUES('$nom','$prenom','$email','$mdp','$id_money')");
 $select->execute();
+    }
+
+    
 $reponse=$select->fetch();
 /**Réattribution des variables pour une ouverture de session et renvoie vers la page achat.html**/
 if ($select->rowcount() > 0){
