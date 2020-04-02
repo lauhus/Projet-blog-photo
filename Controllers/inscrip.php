@@ -31,7 +31,7 @@ if ($repverif[0] == $email){
 $select=$connexion->prepare("INSERT INTO user(nom, prenom, email, mdp, id_money)VALUES('$nom','$prenom','$email','$mdp','$id_money')");
 $select->execute();
     
-
+    }
 
 $reponse=$select->fetch();
 /**Réattribution des variables pour une ouverture de session et renvoie vers la page achat.html**/
@@ -46,4 +46,3 @@ if ($select->rowcount() > 0){
 }
 
 ?>
-
