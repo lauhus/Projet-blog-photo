@@ -1,9 +1,9 @@
 <?php
-/*session_start();
-if{(
-    (session_start($_SESSION['id']==NULL));
-    echo 'Veuillez vous connectez avant de profiter de la collection'; 
-}*/
+session_start();
+
+if ($_SESSION['email']==NULL) {
+    echo 'Veuillez vous connectez avant de profiter de la collection'.header('Location:formulaire.html');
+} else { }
 
 ?>
 
