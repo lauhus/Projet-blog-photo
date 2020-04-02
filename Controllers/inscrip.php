@@ -1,4 +1,7 @@
 <?php
+
+session_start();
+
 //var_dump($_POST);
 
 /**connexion au serveur de la base de données. @$connexion: il y en a une pour chaque gestionnaire**/
@@ -20,26 +23,27 @@ $verif= $connexion->prepare('SELECT email FROM user WHERE email=?');
 $verif->bindParam(1, $email);
 $verif->execute();
 
-$reponse=$verif->fetch();
+$repverif=$verif->fetch();
 
-if ($reponse[0] == $email){
-    echo 'E-mail déjà utilisé,connectez-vous'.header('Location:../Views/formulaire.html');
+if ($repverif[0] == $email){
+    header('Location:../Views/formulaire.html?message="E-mail déjà utilisé,connectez-vous"');
     
-    } else 
-
+    } else { 
 
 /**Requête de création d'un compte avec INSERT INTO*/
-/*$select=$connexion->prepare("INSERT INTO user(nom, prenom, email, mdp, id_money)VALUES('$nom','$prenom','$email','$mdp','$id_money')");
+$select=$connexion->prepare("INSERT INTO user(nom, prenom, email, mdp, id_money)VALUES('$nom','$prenom','$email','$mdp','$id_money')");
 $select->execute();
+    }
+
 $response=$select->fetch();
 /**Réattribution des variables pour une ouverture de session et renvoie vers la page achat.html**/
-/*if ($select->rowcount() > 0){
-    session_start();
+if ($select->rowcount() > 0){
     $_SESSION['nom']=$reponse['nom'];
     $_SESSION['prenom']=$reponse['prenom'];
     $_SESSION['email']=$reponse['email'];
     $_SESSION['mdp']=$reponse['mdp'];
     $_SESSION['id_money']=$reponse['id_money'];
     header('Location:../Index.html');
-}*/
+}
+
 ?>
