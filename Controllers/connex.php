@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/sketchy/bootstrap.min.css"/>
 </head>
 <body>
+            <!--Navbar-->
     <div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <a class="navbar-brand" href="../Index.html">Accueil</a>
@@ -27,11 +28,13 @@
         </div>
     </nav>
     </div>
+            <!--Message de confirmation-->
     <div class="jumbotron">
         <h1 class="display-3"> <?php echo 'Identifiants érronés.';?> </h1>
-     
+    
     <button type="button" class="btn btn-outline-secondary"><a href="../Views/formulaire.html">Retour à l'identification </a> </button>
     </div>
+            <!--Footer-->
     <footer > 
         <div clas="col">
         <p> <h6>Droit d'auteur </h6> 
@@ -80,6 +83,8 @@ $repverif=$verif->fetch();
 
     $_SESSION['email']=$repverif['email'];
     $_SESSION['mdp']=$repverif['mdp'];
+
+//Verification de l'existence ou non de l'adresse email
 
 if (($repverif[0]==$email)&&($repverif[1]==$mdp)) {
     header('Location:../Views/achat_ctrl.php');
