@@ -22,7 +22,7 @@ $verif->execute();
 $repverif=$verif->fetch();
 
 if ($repverif[0] == $email){
-    header('Location:../Views/formulaire.html?message="E-mail déjà utilisé,connectez-vous"');
+    header('Location:erreurinscrip.html');
     
     } else { 
 
@@ -30,9 +30,9 @@ if ($repverif[0] == $email){
 /**Requête de création d'un compte avec INSERT INTO*/
 $select=$connexion->prepare("INSERT INTO user(nom, prenom, email, mdp, id_money)VALUES('$nom','$prenom','$email','$mdp','$id_money')");
 $select->execute();
-    }
-
     
+
+
 $reponse=$select->fetch();
 /**Réattribution des variables pour une ouverture de session et renvoie vers la page achat.html**/
 if ($select->rowcount() > 0){
@@ -42,7 +42,8 @@ if ($select->rowcount() > 0){
     $_SESSION['email']=$reponse['email'];
     $_SESSION['mdp']=$reponse['mdp'];
     $_SESSION['id_money']=$reponse['id_money'];
-    header('Location:../Index.html');
+    header('Location:../Views/achat_ctrl.php');
 }
 
 ?>
+
