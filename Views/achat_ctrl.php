@@ -14,6 +14,7 @@ if{(
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Accueil Jean-Michel Photographie</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/sketchy/bootstrap.min.css"/>
+        <link rel="stylesheet" href="../bootstrap.min.css">
     </head>
     <body>
         <div>
