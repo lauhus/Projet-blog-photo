@@ -1,8 +1,8 @@
 <?php
 
 /**connexion au serveur de la base de données. @$connexion: il y en a une pour chaque gestionnaire**/
-$connexion = new PDO('mysql:host=localhost;dbname=projet_photos;charset=utf8','msb','stagiaire');
-//$connexion = new PDO('mysql:host=localhost;dbname=projet_photos;charset=utf8','lauhu','stagiaire ');
+//$connexion = new PDO('mysql:host=localhost;dbname=projet_photos;charset=utf8','msb','stagiaire');
+$connexion = new PDO('mysql:host=localhost;dbname=projet_photos;charset=utf8','lauhu','stagiaire ');
 
 
 /**Connexion à la base de données via le formulaire, l'email sert d'ID*/
@@ -34,6 +34,6 @@ if ($select->rowcount() > 0){
     $_SESSION['email']=$reponse['email'];
     $_SESSION['mdp']=$reponse['mdp'];
     $_SESSION['id_money']=$reponse['id_money'];
-    header('Location:../achat.html');
+    header('Location:../Views/achat_ctrl.php');
 }
 ?>
