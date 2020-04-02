@@ -20,6 +20,12 @@ margin-right: auto;
 .footer{
     margin-left: 5%;
 }
+.photo
+{
+    display:flex;
+    margin-left: 28%;
+    margin-right: auto;
+}
 
 /* animation */
 
